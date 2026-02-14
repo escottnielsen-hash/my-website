@@ -1,0 +1,78 @@
+/* Angie's Website - Custom Brand Styling */
+
+:root {
+  --brand-primary: #2c6e49;
+  --brand-secondary: #4c956c;
+  --brand-accent: #d4a373;
+  --brand-light: #fefae0;
+  --brand-dark: #1a1a2e;
+}
+
+/* Light theme overrides */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.post-title {
+  font-weight: 700;
+}
+
+/* Brand accent on links */
+.entry-content a,
+.post-content a {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--brand-accent);
+  text-underline-offset: 3px;
+}
+
+.entry-content a:hover,
+.post-content a:hover {
+  color: var(--brand-secondary);
+}
+
+/* Styled home info section */
+.first-entry {
+  border: 2px solid var(--brand-accent);
+  border-radius: 12px;
+}
+
+.first-entry .entry-header h1 {
+  color: var(--brand-primary);
+}
+
+/* Navigation styling */
+#menu a {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Footer styling */
+.footer {
+  border-top: 2px solid var(--brand-accent);
+}
+
+/* Social icons */
+.social-icons a {
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Card hover effect on post list */
+.post-entry {
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

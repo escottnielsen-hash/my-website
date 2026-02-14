@@ -2,30 +2,81 @@ baseURL = 'https://escottnielsen-hash.github.io/my-website/'
 languageCode = 'en-us'
 title = "Angie's Website"
 theme = 'PaperMod'
+[pagination]
+  pagerSize = 5
 
 [params]
-  description = "Welcome to my website"
+  description = "Entrepreneur, creator, and eco-friendly product innovator"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowFullTextinRSS = true
+  author = "Angela Nielsen"
 
 [params.homeInfoParams]
-  Title = "Welcome!"
-  Content = "This is my personal website where I share projects, ideas, and more."
+  Title = "Hi, I'm Angie!"
+  Content = "Entrepreneur, creator, and eco-friendly product innovator. Welcome to my corner of the internet where I share my journey, projects, and ideas."
 
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:hello@example.com"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/escottnielsen-hash"
+
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
+
+[params.editPost]
+  disabled = true
+
+# Search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Navigation
 [[menus.main]]
   name = "Home"
   url = "/"
   weight = 1
 
 [[menus.main]]
-  name = "Posts"
-  url = "/posts/"
+  name = "About"
+  url = "/about/"
   weight = 2
 
 [[menus.main]]
-  name = "About"
-  url = "/about/"
+  name = "Portfolio"
+  url = "/portfolio/"
   weight = 3
+
+[[menus.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 4
+
+[[menus.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 5
+
+[[menus.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 6
+
+# SEO
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
