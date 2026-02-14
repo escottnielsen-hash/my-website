@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://escottnielsen-hash.github.io/my-website/'
 languageCode = 'en-us'
 title = "Angie's Website"
 theme = 'PaperMod'
