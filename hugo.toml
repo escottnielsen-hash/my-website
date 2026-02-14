@@ -1,0 +1,31 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Angie's Website"
+theme = 'PaperMod'
+
+[params]
+  description = "Welcome to my website"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[params.homeInfoParams]
+  Title = "Welcome!"
+  Content = "This is my personal website where I share projects, ideas, and more."
+
+[[menus.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menus.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
